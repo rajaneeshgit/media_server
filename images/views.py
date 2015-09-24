@@ -101,7 +101,7 @@ class ImageRender(View):
 
         #req_directory = os.path.join(settings.BASE_DIR, "static", "images")
         #req_img_name = os.path.basename(req_img_path)
-        req_directory = settings.MEDIA_ROOT#,os.path.join(settings.MEDIA_ROOT, "images")
+        req_directory = os.path.join(settings.MEDIA_ROOT, os.path.dirname(req_img_path))
         req_img_name = os.path.basename(req_img_path)
         
         # create img path dict
